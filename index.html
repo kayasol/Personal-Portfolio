@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            color: #003366;
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            background-color: #003366;
+            padding: 10px;
+            text-align: center; /* Centering the text in the menu bar */
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            background-color: #e0f7ff;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 200px; /* Increased size of the image */
+            height: 200px; /* Increased size of the image */
+            border: 3px solid #003366;
+        }
+        .video-container {
+            position: relative;
+            max-width: 80%; /* Reduced width of the video container */
+            height: auto;
+            margin: 20px auto; /* Centering the video container */
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        .video-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+        }
+        .video-text h2, .video-text p {
+            margin: 5px;
+        }
+        .bibliography {
+            margin: 20px auto; /* Centering the About Me section */
+            background-color: #e0f7ff;
+            padding: 10px;
+            border: 1px solid #003366;
+            max-width: 600px; /* Reduced width of the content box */
+            text-align: left;
+        }
+        button {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="content.html">Content</a>
+    </div>
+    <div class="header">
+        <img src="Sol_Kaya.jpg" alt="Your Photo">
+        <h1>Kaya Sol</h1>
+        <p>Undergraduate Student, IPI Cybersecurity Research Fellow</p>
+        <div class="bibliography">
+            <h2 style="text-align: center;">About Me</h2>
+            <p>I am a graduating senior at the University of Washington, majoring in Business Administration. I am headed to the Johns Hopkins School of Advanced International Studies for a Master of Arts in International Relations. I will focus on technology and innovation with a regional focus in Europe and Eurasia. With my educational background and research experience, I aim to facilitate effective and actionable collaboration, bridging the gap between various stakeholders and driving policy changes that enhance global cybersecurity.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="Generated_Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-text">
+                <h2>Advocate for Global Cyber Policy</h2>
+            </div>
+        </div>
+        <button onclick="window.location.href='content.html'">Go to Content</button>
+    </div>
+</body>
+</html>
