@@ -14,14 +14,27 @@
         }
         .menu {
             background-color: #003366;
-            padding: 10px;
+            padding: 15px; /* Increased padding to thicken the menu bar */
             text-align: center; /* Centering the text in the menu bar */
+            display: flex; /* Align items horizontally */
+            justify-content: space-between; /* Space evenly between items */
+            align-items: center; /* Align items vertically */
         }
         .menu a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
+        }
+        .logo-container {
+            display: flex; /* Align items horizontally */
+            align-items: center; /* Align items vertically */
+            margin-right: 15px; /* Add margin to the right for spacing */
+        }
+        .logo {
+            width: 50px; /* Set width for logos */
+            height: auto; /* Maintain aspect ratio */
+            margin-left: 10px; /* Add margin to the left for spacing */
         }
         .container {
             text-align: center;
@@ -88,8 +101,14 @@
 </head>
 <body>
     <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="content.html">Content</a>
+        <div class="logo-container">
+            <img src="Washington-Foster-School-of-Business.png" alt="Logo 1" class="logo">
+            <img src="johns-hopkins-logo-vertical-blue-sais-john-hopkins-university-1377907.png" alt="Logo 2" class="logo">
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="content.html">Content</a>
+        </div>
     </div>
     <div class="header">
         <img src="Sol_Kaya.jpg" alt="Your Photo">
@@ -114,3 +133,5 @@
     </div>
 </body>
 </html>
+
+
